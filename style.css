@@ -36,5 +36,22 @@
   margin-bottom: 10px;
   margin-top: 3px;
   background-color: aliceblue;
-  border: red solid 1px;
+  border: rgb(116, 116, 116) solid 1px;
+}
+.container{
+  display: flex;
+ 
+}
+#container-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#gif{
+  width: 100px;
+}
+#gif-img{
+  max-width: 400px;
+  height: 300px;
 }
