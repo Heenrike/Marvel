@@ -1,10 +1,12 @@
-const homemAranha = document.querySelector(".homemAranha");
 const hulk = document.querySelector(".hulk");
 const homemFerro = document.querySelector(".homemFerro");
 const imagem = document.getElementById("gif-img");
 const doutorEstranho = document.querySelector(".doutorEstranho")
+const sheHulk = document.querySelector(".sheHulk")
 const capitaoAmerica = document.querySelector(".capitaoAmerica")
+const homemAranha = document.querySelector(".homemAranha");
 const motoqueiroFantasma = document.querySelector(".motoqueiroFantasma")
+const capitaoMarvel = document.querySelector(".capitaoMarvel")
 
 
 homemAranha.addEventListener("click", function() {
@@ -32,4 +34,11 @@ capitaoAmerica.addEventListener("click", function(){
 motoqueiroFantasma.addEventListener("click", function(){
   imagem.src = 'assets/HeroisFoto/Motoqueiro-Fantasma.gif';
 
+})
+sheHulk.addEventListener("click", function(){
+  imagem.src = 'assets/HeroisFoto/She-Hulk.png';
+})
+
+capitaoMarvel.addEventListener("click", function(){
+  imagem.src = 'assets/HeroisFoto/capitaoMarvel.png';
 })
