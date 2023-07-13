@@ -23,19 +23,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 #container-left img {
-  width: 120px;
-  height: 170px;
-  border-radius: 4px;
+  width: 100px;
+  height: 130px;
+  border-radius: 10px;
   border: none;
 }
 
 #container-left img:hover {
   transition: 600ms;
   box-shadow: 0 0 15px rgb(255, 11, 11);
-  transform: scale(1.19);
+  transform: scale(1.1 );
 }
 #container-left img:focus {
   box-shadow: 0 0 19pc beige;
@@ -100,7 +101,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 500px;
+  height: 400px;
   margin: 0;
   text-align: center;
   text-align: center;
@@ -113,10 +114,9 @@ img:hover {
 }
 
 button {
-  width: 120px;
-  height: 170px;
-  border-radius: 4px;
-}
-button.heroButton.clicked {
-  padding: 10px;
+  width: 100px;
+  height: 130px;
+  border-radius: 10px;
+  border: none;
+  background: transparent
 }
