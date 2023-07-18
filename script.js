@@ -13,6 +13,7 @@ const text = document.querySelector("#text");
 const heroImage = document.querySelector(".heroImage");
 const info = document.querySelector("#info");
 const buttons = document.querySelectorAll(".heroButton");
+const heroButton = document.querySelectorAll(".heroButton");
 
 function removeStyles() {
   imgHomemAranha.style.transform = "";
@@ -37,13 +38,6 @@ function removeStyles() {
   imgDemolidor.style.boxShadow = "";
 }
 
-buttons.forEach(function (button) {
-  button.addEventListener("click", function () {
-    removeStyles();
-    console.log("AAAA");
-  });
-});
-
 const imgCapitaoAmerica = document.getElementById("imgCapitaoAmerica");
 const imgDoutorEstranho = document.getElementById("imgDoutorEstranho");
 const imgHomemFerro = document.getElementById("imgHomemFerro");
@@ -54,134 +48,81 @@ const imgSheHulk = document.getElementById("imgSheHulk");
 const imgCapitaoMarvel = document.getElementById("imgCapitaoMarvel");
 const imgThor = document.getElementById("imgThor");
 const imgDemolidor = document.getElementById("imgDemolidor");
+let linha = document.getElementById("linha1");
 
 homemAranha.addEventListener("click", function () {
-  imgHomemAranha.style.transform = "scale(1.1)";
-  imgHomemAranha.style.boxShadow = "0 0 15px #ccc";
-  imagem.style.opacity = "0";
   info.textContent =
     "O Homem-Aranha, também conhecido como Peter Parker, possui força proporcional à de uma aranha. Ele é capaz de levantar cerca de 10 toneladas e possui reflexos incrivelmente rápidos.";
-
-  setTimeout(function () {
-    imagem.src = "assets/HeroisFoto/Homem-Aranha.gif";
-    imagem.style.opacity = "1";
-  }, 100);
+  imagem.src = "assets/HeroisFoto/Homem-Aranha.gif";
 });
 
 hulk.addEventListener("click", function () {
-  imgHulk.style.transform = "scale(1.1)";
-  imgHulk.style.boxShadow = "0 0 15px #ccc";
-  imagem.style.opacity = "0";
   info.textContent =
     "O Hulk é conhecido por sua força descomunal. Quando Bruce Banner se transforma em Hulk, ele ganha uma força sobre-humana praticamente ilimitada, sendo capaz de levantar montanhas e causar destruição massiva.";
-
-  setTimeout(function () {
-    imagem.src = "assets/HeroisFoto/Hulk.png";
-    imagem.style.opacity = "1";
-  }, 100);
+  imagem.src = "assets/HeroisFoto/Hulk.png";
 });
 
 homemFerro.addEventListener("click", function () {
-  imgHomemFerro.style.transform = "scale(1.1)";
-  imgHomemFerro.style.boxShadow = "0 0 15px #ccc";
-  imagem.style.opacity = "0";
   info.textContent =
     "O Homem de Ferro, também conhecido como Tony Stark, é um gênio inventor que usa uma armadura avançada. A armadura do Homem de Ferro aumenta sua força física para níveis sobre-humanos, permitindo-lhe levantar várias toneladas.";
-
-  setTimeout(function () {
-    imagem.src = "assets/HeroisFoto/Homem-Ferro.png";
-    imagem.style.opacity = "1";
-  }, 100);
+  imagem.src = "assets/HeroisFoto/Homem-Ferro.png";
 });
 
 doutorEstranho.addEventListener("click", function () {
-  imgDoutorEstranho.style.transform = "scale(1.1)";
-  imgDoutorEstranho.style.boxShadow = "0 0 15px #ccc";
-  imagem.style.opacity = "0";
   info.textContent =
     "O Doutor Estranho é um feiticeiro mestre das artes místicas. Embora sua força física não seja sobre-humana, ele compensa isso com habilidades mágicas poderosas, permitindo-lhe manipular a realidade e lançar feitiços destrutivos.";
-
-  setTimeout(function () {
-    imagem.src = "assets/HeroisFoto/Doutor-Estranho.png";
-    imagem.style.opacity = "1";
-  }, 100);
+  imagem.src = "assets/HeroisFoto/Doutor-Estranho.png";
 });
 
 capitaoAmerica.addEventListener("click", function () {
-  imgCapitaoAmerica.style.transform = "scale(1.1)";
-  imgCapitaoAmerica.style.boxShadow = "0 0 15px #ccc";
-  imagem.style.opacity = "0";
   info.textContent =
     "O Capitão América é um super soldado com força sobre-humana. Ele possui força física excepcional, permitindo-lhe levantar até 800 libras (362 quilos) e combater adversários poderosos.";
-
-  setTimeout(function () {
-    imagem.src = "assets/HeroisFoto/Capita-America.png";
-    imagem.style.opacity = "1";
-  }, 100);
+  imagem.src = "assets/HeroisFoto/Capita-America.png";
 });
 
 motoqueiroFantasma.addEventListener("click", function () {
-  imgMotoqueiroFantasma.style.transform = "scale(1.1)";
-  imgMotoqueiroFantasma.style.boxShadow = "0 0 15px #ccc";
-  imagem.style.opacity = "0";
   info.textContent =
     "O Motoqueiro Fantasma, também conhecido como Johnny Blaze, é um anti-herói demoníaco. Ele possui uma força sobre-humana que varia de acordo com sua ligação com o demônio Zarathos, permitindo-lhe levantar cargas pesadas e derrotar inimigos poderosos.";
-
-  setTimeout(function () {
-    imagem.src = "assets/HeroisFoto/Motoqueiro-Fantasma.gif";
-    imagem.style.opacity = "1";
-  }, 100);
+  imagem.src = "assets/HeroisFoto/Motoqueiro-Fantasma.gif";
 });
 
 sheHulk.addEventListener("click", function () {
-  imgSheHulk.style.transform = "scale(1.1)";
-  imgSheHulk.style.boxShadow = "0 0 15px #ccc";
-  imagem.style.opacity = "0";
   info.textContent =
     "A She-Hulk, também conhecida como Jennifer Walters, é uma versão feminina do Hulk. Ela possui uma força sobre-humana semelhante à do Hulk, permitindo-lhe levantar várias toneladas e combater adversários formidáveis.";
-
-  setTimeout(function () {
-    imagem.src = "assets/HeroisFoto/She-Hulk.png";
-    imagem.style.opacity = "1";
-  }, 100);
+  imagem.src = "assets/HeroisFoto/She-Hulk.png";
 });
 
 capitaoMarvel.addEventListener("click", function () {
-  imgCapitaoMarvel.style.transform = "scale(1.1)";
-  imgCapitaoMarvel.style.boxShadow = "0 0 15px #ccc";
-  imagem.style.opacity = "0";
   info.textContent =
     "A Capitã Marvel, também conhecida como Carol Danvers, possui poderes cósmicos que lhe concedem força sobre-humana. Ela é uma das heroínas mais poderosas do universo Marvel e é capaz de enfrentar ameaças cósmicas de grande escala.";
-
-  setTimeout(function () {
-    imagem.src = "assets/HeroisFoto/capitaMarvel.png";
-    imagem.style.opacity = "1";
-  }, 100);
+  imagem.src = "assets/HeroisFoto/capitaMarvel.png";
 });
 
 thor.addEventListener("click", function () {
-  imgThor.style.transform = "scale(1.1)";
-  imgThor.style.boxShadow = "0 0 10px #ccc";
-
-  imagem.style.opacity = "0";
   info.textContent =
     "Thor é o deus do trovão e possui uma força sobre-humana incrível. Ele é capaz de levantar seu martelo, o Mjolnir, que é extremamente pesado e só pode ser manejado por aqueles que são dignos.";
-
-  setTimeout(function () {
-    imagem.src = "assets/HeroisFoto/Thor.png";
-    imagem.style.opacity = "1";
-  }, 100);
+  imagem.src = "assets/HeroisFoto/Thor.png";
 });
 
 demolidor.addEventListener("click", function () {
-  imgDemolidor.style.transform = "scale(1.1)";
-  imgDemolidor.style.boxShadow = "0 0 15px #ccc";
-  imagem.style.opacity = "0";
   info.textContent =
     "O Demolidor, também conhecido como Matt Murdock, é um super-herói cego que possui sentidos aprimorados. Embora sua força física não seja sobre-humana, ele é um combatente habilidoso e possui agilidade e reflexos excepcionais.";
-
-  setTimeout(function () {
-    imagem.src = "assets/HeroisFoto/Demolidor.png";
-    imagem.style.opacity = "1";
-  }, 100);
+  imagem.src = "assets/HeroisFoto/Demolidor.png";
 });
+
+document.addEventListener("click", function (e) {
+  let el = e.target;
+  if (el.classList.contains("heroImage")) {
+    removeStyles();
+    el.style.transform = "scale(1.1)";
+    el.style.boxShadow = "0 0 10  px #ccc";
+    imagem.style.opacity = "1";
+    console.log(el);
+  }
+});
+
+function exibirLinha() {
+  if (imagem.src !== "#") {
+    linha.style.display = "flex";
+  }
+}
